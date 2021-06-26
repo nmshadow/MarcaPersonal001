@@ -1,0 +1,370 @@
+:root {
+    --color-primary: #2b2e4a;
+    --color-primary-o: #2a2c3d;
+    --color-primary-xo: #252630;
+    --color-primary-l: #3b3f61;
+    --color-primary-xl: #4b4e6a;
+    --color-secundary: #CAFA00;
+    --color-secundary-o: #CDFC08;
+    --color-secundary-xo: #D6FD34;
+    --color-secundary-l: #DEFD5E;
+    --color-secundary-xl: #E9FE8F;
+    --color-text: #1d201a;
+    --color-text-l: #9da398;
+    --color-text-xl: #c4c9bf;
+    --blanco : #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+.container-logo-nav-container_out{
+    background-color: var(--color-primary);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.container-logo-nav-container_out a{
+    color: white;
+    text-decoration: none;
+}
+.container-logo-nav-container_in{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+}
+.logo,.menu-icon{
+    display: block;
+    padding: 0.5vw;
+    transition: all 0.4s linear;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    display: block;
+    padding: 0.5vw;
+    transition: all 0.4s linear;
+}
+.navbar ul li a:hover{
+    background: #4C4C4C80;
+}
+.menu-icon{
+    color: white;
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    nav.navbar{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    nav.navbar ul li{
+        display: block;
+    }
+    nav.navbar ul li a{
+        display: block;
+        padding: 0.5vw 0;
+        transition: all 0.4s linear;
+    }
+    nav.navbar ul li a:hover{
+        background: #4C4C4C80;
+    }
+    nav.navbar ul{
+        display: none;
+    }
+    nav.navbar ul.show{
+        display: block;
+    }
+}
+header{
+    background-image: url(https://image.shutterstock.com/image-photo/portrait-handsome-man-doing-push-260nw-331291736.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+.container-slogan-tittle{
+    width: 98.9vw;
+    height: 70vh;
+    display: flex;
+    background: rgba( 75, 78, 106, 0.30 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    z-index: -0.5;
+    align-items: center;
+    color: var(--blanco);
+    justify-content: center;
+}
+.slogan-tittle{
+    position: relative;
+    text-align: center;
+}
+.container-about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 60vh;
+}
+.about-me-tittle{
+    color: var(--color-text);
+    background: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    width: 45.45vw;
+    padding: 2vw;
+    justify-content: center;
+}
+.container-info{
+    color: white;
+    background:var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    width: 45.45vw;
+    padding: 2vw;
+    justify-content: center;
+}
+.container-articles{
+    width: 100%;
+    background-color: var(--color-primary);
+}
+.articles-content{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.articles-tittle{
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+    padding: 1vw;
+}
+.articles-tittle h1{
+    background-color: var(--color-secundary);
+}
+.card-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 22%;
+    min-width: 320px;
+    text-align: center;
+    margin: 1.5rem;
+    background-color: var(--color-secundary);
+}
+.card-article img{
+    width: 100%;
+    display: contain;
+}
+
+.card-article h4{
+    background-color: var(--color-primary-xl);
+    color: var(--color-text-xl);
+    font-weight: bold;
+    padding: 4px;
+}
+.card-article p{
+    color: var(--color-text);
+    font-weight: bold;
+    padding: 4px;
+}
+.card-article h3{
+    background-color: var(--color-primary-xl);
+    color: var(--color-text-xl);
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 4px;
+    margin: 4px;
+    bottom: 0;
+    cursor: pointer;
+}
+.article-detail{
+    color: var(--color-secundary);
+}
+.container-consult-online{
+    width: 100%;
+    height: 60vh;
+    background: var(--color-primary);
+    justify-content: center;
+}
+.consult-online-tittle{
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+    padding: 1vw;
+}
+.consult-online-tittle h1{
+    background-color: var(--color-secundary);
+}
+.consult-online-content{
+    display: flex;
+    justify-content: center;
+}
+.consult-online-content p{
+    width: 40%;
+    background-color: var(--color-primary-xl);
+    color: var(--color-text-xl);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+.consult-online-contract{
+    display: flex;
+    justify-content: center;
+}
+.consult-online-contract h4{
+    background-color: var(--color-secundary-xl);
+    color: var(--color-text);
+     font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+.container-social-media{
+    width: 100%;
+    height: 60vh;
+    background: var(--color-primary);
+    justify-content: center;
+}
+.social-media-tittle{
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+    padding: 1vw;
+}
+.social-media-tittle h1{
+    background-color: var(--color-secundary);
+}
+.social-media-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-social{
+    background-color: var(--color-primary-xl);
+    padding: .8rem;
+    margin:  .5rem;
+    width: 80px;
+    cursor: pointer;
+}
+.card-social img{
+    width: 100%;
+    display: contain;
+}
+.card-social h4{
+    padding-top: .6rem;
+    text-align: center;
+    color: var(--color-text-l);
+}
+.container-shop{
+    width: 100%;
+    height: 80vh;
+    background: var(--color-primary);
+    justify-content: center;
+}
+.shop-tittle{
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+    padding: 1vw;
+}
+.shop-tittle h1{
+    background-color: var(--color-secundary);
+}
+.shop-content{
+    display: flex;
+    justify-content: center;
+}
+.shop-content p{
+    width: 40%;
+    background-color: var(--color-primary-xl);
+    color: var(--color-text-xl);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+.shop-open-button{
+    display: flex;
+    justify-content: center;
+}
+.shop-open-button h4{
+    background-color: var(--color-secundary-xl);
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+.container-partners{
+    width: 100%;
+    height: 60vh;
+    background: var(--color-primary);
+    justify-content: center;
+}
+.partners-tittle{
+    display: inline;
+    text-align: center;
+    font-size: 2em;
+    padding: 1vw;
+}
+.partners-tittle h1{
+    background-color: var(--color-secundary);
+}
+.partners-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-partner{
+    background-color: var(--color-primary-xl);
+    padding: .8rem;
+    margin:  .5rem;
+    width: 15%;
+    cursor: pointer;
+    justify-content: center;
+}
+.card-partner img{
+    width: 100%;
+    display: contain;
+}
+.container-footer{
+    display: inline;
+    justify-content: center;
+}
+.container-footer h1{
+    background-color: var(--color-primary);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1vw;
+}
